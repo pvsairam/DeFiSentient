@@ -1,0 +1,18 @@
+{
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist/public",
+  "rewrites": [
+    {
+      "source": "/api/pools/stats",
+      "destination": "/api/stats"
+    },
+    {
+      "source": "/api/pools",
+      "destination": "/api/pools"
+    },
+    {
+      "source": "/api/:path*",
+      "destination": "/api"
+    }
+  ]
+}
